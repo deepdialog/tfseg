@@ -1,0 +1,12 @@
+*.py[cod]
+*.log
+.ipynb_checkpoints
+/encoders
+*.pkl
+*.ipynb
+/*.html
+build
+dist
+*.egg-info
+.coverage
+coverage.xml

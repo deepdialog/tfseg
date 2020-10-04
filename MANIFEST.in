@@ -1,0 +1,5 @@
+include tfseg/chn_seg_albert/saved_model.pb
+include tfseg/chn_seg_albert/assets
+include tfseg/chn_seg_albert/variables
+include tfseg/chn_seg_albert/variables/variables.index
+include tfseg/chn_seg_albert/variables/variables.data-00000-of-00001
