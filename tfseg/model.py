@@ -1,8 +1,10 @@
 import os
 import tensorflow as tf
 import tensorflow_hub as hub
+from tfseg.silence_tensorflow import silence_tensorflow
 
 
+silence_tensorflow()
 MODEL_PATH = os.path.join(os.path.dirname(__file__), 'chn_seg_albert')
 MODEL = hub.load(MODEL_PATH)
 

@@ -19,5 +19,9 @@ solution: Albert + CRF
 ```python
 >>> from tfseg import posseg
 >>> posseg.lcut('我爱北京天安门')
-[('我', 'r'), ('爱', 'v'), ('北京', 'ns'), ('天安门', 'ns')]
+[pair('我', 'r'), pair('爱', 'v'), pair('北京', 'ns'), pair('天安门', 'ns')]
+>>> posseg.lcut('我爱北京天安门')[0].word
+'我'
+>>> posseg.lcut('我爱北京天安门')[0].flag
+'r'
 ```

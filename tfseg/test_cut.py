@@ -1,6 +1,7 @@
 
 from tfseg import cut, lcut
 from tfseg import posseg
+from tfseg.pair import pair
 
 
 def test_cut():
@@ -18,14 +19,14 @@ def test_lcut():
 def test_posseg_cut():
     ret = posseg.cut('我爱北京天安门')
     for x in ret:
-        assert isinstance(x, tuple)
-        assert isinstance(x[0], str)
-        assert isinstance(x[1], str)
+        assert isinstance(x, pair)
+        assert isinstance(x.word, str)
+        assert isinstance(x.flag, str)
 
 
 def test_posseg_lcut():
     ret = posseg.lcut('我爱北京天安门')
     assert isinstance(ret, list)
-    assert isinstance(ret[0], tuple)
-    assert isinstance(ret[0][0], str)
-    assert isinstance(ret[0][1], str)
+    assert isinstance(ret[0], pair)
+    assert isinstance(ret[0].word, str)
+    assert isinstance(ret[0].flag, str)

@@ -24,7 +24,7 @@ else:
 
 setup(
     name='tfseg',
-    version='1.0.0',
+    version='1.1.0',
     keywords=('nlp', 'tensorflow', 'chinese segmentation', 'segmentation', 'segment'),
     description='NLP tool',
     long_description='NLP tool, SEG, POS',
